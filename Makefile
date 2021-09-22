@@ -8,7 +8,7 @@ CC_CMD = @echo "CC $@"; $(CC) $(CFLAGS) -o $@ -c $<
 
 SUBDIRS := $(wildcard */.)
 
-all: options $(SUBDIRS) $(TARGET).o $(WSH_UTIL_DIR) $(TARGET)
+all: options $(SUBDIRS) $(TARGET).o $(WSH_UTIL_DIR) $(TARGET) install
 
 $(SUBDIRS):
 	@$(MAKE) -C $@
