@@ -11,7 +11,6 @@ int main(void) {
 		logPrint("[DEBUG]", "Enabled debug Mode");
 	}
 	
-	shell(WSH_DEBUG_MODE);
-
+	shell(WSH_DEBUG_MODE, WSH_CLEAR_STARTUP);
 	return 0;
 }

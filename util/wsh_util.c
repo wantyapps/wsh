@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 #include "wsh_util.h"
+#include "wsh_util_config.h"
 
 void logPrint(char *prefix, char *message) {
 	printf("%s %s\n", prefix, message);
@@ -17,4 +18,8 @@ void wsh_version(void) {
 
 void wsh_exit(void) {
     exit(0);
+}
+
+void wsh_help(void) {
+    printf(HELP_STRING);
 }

@@ -1,1 +1,1 @@
-void shell(int debugMode);
+void shell(int debugMode, int startupClear);
